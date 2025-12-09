@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人作品集 - 首页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">我的作品集</a>
+           <nav class="nav-menu" id="navMenu">
+    <ul>
+        <li><a href="index.html" class="nav-link active">首页</a></li>
+        <li><a href="project-detail.html" class="nav-link">项目详情</a></li>
+        <li><a href="skill-detail.html" class="nav-link">技能详情</a></li>
+        <li><a href="about.html" class="nav-link">个人介绍</a></li>
+        <li><a href="contact.html" class="nav-link">联系我</a></li>
+    </ul>
+</nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索项目/技能...">
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 横幅轮播 -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>哆啦cccc梦</h1>
+            <p>大数据管理与应用专业 · 专注前端技术实践</p>
+            <a href="project-detail.html" class="btn">查看项目详情</a>
+        </div>
+    </section>
+
+    <!-- 内容区 -->
+    <section class="home-content section-padding">
+        <div class="container">
+            <div class="home-grid">
+                <!-- 个人介绍（左栏） -->
+                <div class="home-item about-item">
+                    <h3 class="item-title"><i class="fa fa-user"></i> 个人介绍</h3>
+                    <div class="about-content">
+                        <img src="images/avatar.jpg" alt="个人头像" class="avatar">
+                        <div class="about-text">
+    <h4>陈飞翔 | 24大数据管理与应用1班</h4>
+    <p>热爱羽毛球，擅长HTML5、CSS3、响应式布局，致力于打造优质用户体验的网页产品。</p>
+    <a href="about.html" class="btn btn-sm">了解更多</a>
+</div>
+                    </div>
+                </div>
+
+                <!-- 技能进度（中栏） -->
+                <div class="home-item skill-item">
+                    <h3 class="item-title"><i class="fa fa-code"></i> 核心技能</h3>
+                    <div class="skills-content">
+                        <div class="skill-bar">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-progress" style="width: 90%;"></div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-progress" style="width: 85%;"></div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-progress" style="width: 75%;"></div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">响应式布局</span>
+                            <div class="skill-progress" style="width: 80%;"></div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目预览（右栏） -->
+                <div class="home-item project-item">
+                    <h3 class="item-title"><i class="fa fa-folder-open"></i> 近期项目</h3>
+                    <div class="project-preview">
+                        <div class="project-card">
+                            <img src="images/project1.jpg" alt="项目1">
+                            <h4>HTML图文混排页面</h4>
+                            <a href="project-detail.html" class="link-btn">查看详情</a>
+                        </div>
+                        <div class="project-card">
+                            <img src="images/project2.jpg" alt="项目2">
+                            <h4>CSS导航与视觉效果</h4>
+                            <a href="project-detail.html" class="link-btn">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 陈飞翔 个人作品集 | 大数据管理与应用专业 · 前端开发实践</p>
+                <a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i> 返回顶部</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

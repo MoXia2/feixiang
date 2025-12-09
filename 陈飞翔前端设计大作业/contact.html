@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我 - 我的作品集</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">我的作品集</a>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html" class="nav-link">首页</a></li>
+                    <li><a href="project-detail.html" class="nav-link">项目详情</a></li>
+                    <li><a href="skill-detail.html" class="nav-link">技能详情</a></li>
+                    <li><a href="about.html" class="nav-link">个人介绍</a></li>
+                    <li><a href="contact.html" class="nav-link active">联系我</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索项目/技能...">
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 联系我内容区 -->
+    <section class="contact-page section-padding bg-gray">
+        <div class="container">
+            <h2 class="section-title"><span>联系我</span></h2>
+            <div class="contact-grid">
+                <!-- 左侧：联系信息 -->
+                <div class="contact-info">
+                    <h3 class="contact-heading"><i class="fa fa-info-circle"></i> 联系方式</h3>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>邮箱</h4>
+                                <p>1121528705@qq.com</p>
+                                <a href="mailto:xxx@example.com" class="contact-link">发送邮件</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa fa-github"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>GitHub</h4>
+                                <p>github.com/feixiang</p>
+                                <a href="https://github.com/yourusername" target="_blank" class="contact-link">访问主页</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa fa-juejin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>掘金</h4>
+                                <p>juejin.cn/user/feixiang</p>
+                                <a href="https://juejin.cn/user/youruserid" target="_blank" class="contact-link">访问主页</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/feixiang</p>
+                                <a href="https://linkedin.com/in/yourname" target="_blank" class="contact-link">访问主页</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-note">
+                        <h4><i class="fa fa-lightbulb-o"></i> 温馨提示</h4>
+                        <p>如果您对我的项目感兴趣，或者有合作、交流的意愿，欢迎通过以上方式联系我！我会在24小时内回复您的消息。</p>
+                        <p>也可以通过下方表单给我留言，我会及时与您取得联系~</p>
+                    </div>
+                </div>
+
+                <!-- 右侧：联系表单 -->
+                <div class="contact-form-container">
+                    <h3 class="contact-heading"><i class="fa fa-paper-plane"></i> 给我留言</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">您的姓名</label>
+                            <input type="text" id="contactName" name="name" required placeholder="请输入您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">您的邮箱</label>
+                            <input type="email" id="contactEmail" name="email" required placeholder="请输入您的邮箱">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">留言主题</label>
+                            <select id="contactSubject" name="subject" required>
+                                <option value="">请选择主题</option>
+                                <option value="project">项目合作</option>
+                                <option value="tech">技术交流</option>
+                                <option value="question">问题咨询</option>
+                                <option value="other">其他事项</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">留言内容</label>
+                            <textarea id="contactMessage" name="message" rows="6" required placeholder="请输入您的留言内容"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="form-btn btn">提交留言</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 陈飞翔 个人作品集 | 大数据管理与应用专业 · 前端开发实践</p>
+                <a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i> 返回顶部</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
