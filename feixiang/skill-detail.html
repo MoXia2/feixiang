@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技能详情 - 前端核心技能</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/skill-detail.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">我的作品集</a>
+           <nav class="nav-menu" id="navMenu">
+    <ul>
+        <li><a href="index.html" class="nav-link">首页</a></li>
+        <li><a href="project-detail.html" class="nav-link">项目详情</a></li>
+        <li><a href="skill-detail.html" class="nav-link active">技能详情</a></li>
+        <li><a href="about.html" class="nav-link">个人介绍</a></li>
+        <li><a href="contact.html" class="nav-link">联系我</a></li>
+    </ul>
+</nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索项目/技能...">
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 技能详情内容区 -->
+    <section class="skill-detail section-padding bg-gray">
+        <div class="container">
+            <h2 class="section-title"><span>技能详情</span></h2>
+            <div class="skill-grid">
+                <!-- 技能分类（左栏） -->
+                <div class="skill-categories">
+                    <h3 class="category-title"><i class="fa fa-list"></i> 技能分类</h3>
+                    <ul class="category-list">
+                        <li class="active"><a href="#html5">HTML5</a></li>
+                        <li><a href="#css3">CSS3</a></li>
+                        <li><a href="#javascript">JavaScript</a></li>
+                        <li><a href="#responsive">响应式布局</a></li>
+                        <li><a href="#tools">开发工具</a></li>
+                    </ul>
+                </div>
+
+                <!-- 实战案例（中栏） -->
+                <div class="skill-cases">
+                    <div id="html5" class="skill-item">
+                        <h3><i class="fa fa-html5"></i> HTML5 技能详情</h3>
+                        <div class="skill-level">
+                            <span>熟练度：90%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-desc">
+                            <h4>掌握内容</h4>
+                            <p>熟练使用HTML5语义化标签（&lt;header&gt;&lt;nav&gt;&lt;section&gt;&lt;article&gt;&lt;footer&gt;等）构建页面结构，理解标签语义含义；掌握图片、视频、音频等多媒体元素嵌入；熟悉表单元素与属性，实现基础表单功能。</p>
+                        </div>
+                        <div class="case-examples">
+                            <h4>实战案例</h4>
+                            <div class="case-card">
+                                <h5>HTML图文混排页面</h5>
+                                <p>使用语义化标签搭建个人介绍页，实现图文混排、列表展示等功能，代码规范易读。</p>
+                                <a href="project-detail.html" class="link-btn">查看案例</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="css3" class="skill-item">
+                        <h3><i class="fa fa-css3"></i> CSS3 技能详情</h3>
+                        <div class="skill-level">
+                            <span>熟练度：85%</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-desc">
+                            <h4>掌握内容</h4>
+                            <p>熟练使用CSS3选择器、盒模型、浮动、定位等基础技能；掌握Flex弹性布局与Grid网格布局；熟悉CSS3过渡（transition）、动画（animation）、渐变（gradient）等高级特性；能够实现响应式布局与自适应设计。</p>
+                        </div>
+                        <div class="case-examples">
+                            <h4>实战案例</h4>
+                            <div class="case-card">
+                                <h5>CSS导航与视觉效果设计</h5>
+                                <p>实现现代化导航菜单，运用伪类选择器、浮动布局、过渡动画，提升页面交互体验。</p>
+                                <a href="project-detail.html" class="link-btn">查看案例</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 学习资源（右栏） -->
+                <div class="learning-resources">
+                    <h3 class="resource-title"><i class="fa fa-book"></i> 学习资源</h3>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>HTML5 学习资源</h4>
+                            <ul>
+                                <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML" target="_blank">MDN HTML文档</a></li>
+                                <li><a href="https://www.w3school.com.cn/html/index.asp" target="_blank">W3School HTML教程</a></li>
+                                <li><a href="https://book.douban.com/subject/1102403/" target="_blank">《HTML5与CSS3基础教程》</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-item">
+                            <h4>CSS3 学习资源</h4>
+                            <ul>
+                                <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS" target="_blank">MDN CSS文档</a></li>
+                                <li><a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy（游戏化学习）</a></li>
+                                <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks（英文）</a></li>
+                            </ul>
+                        </div>
+                        <div class="resource-item">
+                            <h4>JavaScript 学习资源</h4>
+                            <ul>
+                                <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target="_blank">MDN JavaScript文档</a></li>
+                                <li><a href="https://javascript.info/" target="_blank">JavaScript.info（英文）</a></li>
+                                <li><a href="https://book.douban.com/subject/35175321/" target="_blank">《JavaScript高级程序设计》</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 陈飞翔 个人作品集 | 大数据管理与应用专业 · 前端开发实践</p>
+                <a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i> 返回顶部</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

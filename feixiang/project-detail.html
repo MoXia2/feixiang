@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目详情 - HTML图文混排页面</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/project-detail.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">我的作品集</a>
+            <nav class="nav-menu" id="navMenu">
+    <ul>
+        <li><a href="index.html" class="nav-link">首页</a></li>
+        <li><a href="project-detail.html" class="nav-link active">项目详情</a></li>
+        <li><a href="skill-detail.html" class="nav-link">技能详情</a></li>
+        <li><a href="about.html" class="nav-link">个人介绍</a></li>
+        <li><a href="contact.html" class="nav-link">联系我</a></li>
+    </ul>
+</nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索项目/技能...">
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 项目详情内容区 -->
+    <section class="project-detail section-padding">
+        <div class="container">
+            <h2 class="section-title"><span>项目详情</span></h2>
+            <div class="detail-grid">
+                <!-- 项目图文详情（左栏） -->
+                <div class="detail-content">
+                    <h3>HTML图文混排个人介绍页</h3>
+                    <div class="project-meta">
+                        <span><i class="fa fa-calendar"></i> 完成时间：2025.10</span>
+                        <span><i class="fa fa-tag"></i> 技术栈：HTML5、语义化标签</span>
+                    </div>
+                    <div class="project-intro">
+                        <h4>项目介绍</h4>
+                        <p>基于HTML5语义化标签搭建的个人介绍页面，包含文字描述、图片展示、列表布局等核心元素，严格遵循HTML文档结构规范，确保代码可读性与搜索引擎友好度。</p>
+                    </div>
+                    <div class="project-images">
+                        <img src="images/project1-1.jpg" alt="项目截图1" class="main-img">
+                        <div class="sub-images">
+                            <img src="images/project1-2.jpg" alt="项目截图2">
+                            <img src="images/project1-3.jpg" alt="项目截图3">
+                        </div>
+                    </div>
+                    <div class="project-features">
+                        <h4>核心功能</h4>
+                        <ul>
+                            <li>使用&lt;header&gt;&lt;nav&gt;&lt;section&gt;&lt;footer&gt;等语义化标签构建页面结构</li>
+                            <li>实现图片与文字的灵活排版，支持图文混排、左图右文、右图左文等布局</li>
+                            <li>添加有序列表与无序列表，展示个人经历与技能清单</li>
+                            <li>优化页面注释，提升代码可维护性</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 技术栈+在线链接（右栏） -->
+                <div class="detail-sidebar">
+                    <div class="sidebar-module">
+                        <h4 class="module-title"><i class="fa fa-code"></i> 技术栈</h4>
+                        <div class="tech-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">语义化标签</span>
+                            <span class="tag">图文排版</span>
+                            <span class="tag">列表布局</span>
+                        </div>
+                    </div>
+                    <div class="sidebar-module">
+                        <h4 class="module-title"><i class="fa fa-link"></i> 在线链接</h4>
+                        <ul class="link-list">
+                            <li><a href="https://github.com/yourusername/html-personal-page" target="_blank"><i class="fa fa-github"></i> GitHub仓库</a></li>
+                            <li><a href="https://yourusername.github.io/html-personal-page/" target="_blank"><i class="fa fa-external-link"></i> 在线预览</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-module">
+                        <h4 class="module-title"><i class="fa fa-lightbulb-o"></i> 学习收获</h4>
+                        <p>掌握HTML5语义化标签的规范使用，理解不同标签的语义含义，学会合理规划页面结构，为后续CSS样式编写与JS交互开发奠定基础。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 相关项目推荐 -->
+            <div class="related-projects">
+                <h3 class="related-title">相关项目推荐</h3>
+                <div class="related-grid">
+                    <div class="related-card">
+                        <img src="images/project2.jpg" alt="相关项目1">
+                        <h4>CSS导航与视觉效果设计</h4>
+                        <a href="project-detail.html" class="btn btn-sm">查看详情</a>
+                    </div>
+                    <div class="related-card">
+                        <img src="images/project3.jpg" alt="相关项目2">
+                        <h4>电商产品分类列表展示</h4>
+                        <a href="project-detail.html" class="btn btn-sm">查看详情</a>
+                    </div>
+                    <div class="related-card">
+                        <img src="images/project4.jpg" alt="相关项目3">
+                        <h4>HTML5表单验证注册页</h4>
+                        <a href="project-detail.html" class="btn btn-sm">查看详情</a>
+                    </div>
+                    <div class="related-card">
+                        <img src="images/project5.jpg" alt="相关项目4">
+                        <h4>响应式个人博客页面</h4>
+                        <a href="project-detail.html" class="btn btn-sm">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 陈飞翔 个人作品集 | 大数据管理与应用专业 · 前端开发实践</p>
+                <a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i> 返回顶部</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
