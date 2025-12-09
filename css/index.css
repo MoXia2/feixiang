@@ -1,0 +1,220 @@
+/* 横幅样式 */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('../images/hero-bg.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 首页内容区布局（电脑端三栏） */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.home-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.home-item:hover {
+    transform: translateY(-5px);
+}
+
+.item-title {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-title i {
+    color: #3498db;
+}
+
+/* 个人介绍模块 */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #f5f7fa;
+}
+
+.about-text h4 {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.btn-sm {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+/* 技能模块 */
+.skill-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    width: 80px;
+    font-size: 0.9rem;
+    color: #2c3e50;
+}
+
+.skill-progress {
+    flex: 1;
+    height: 8px;
+    background-color: #e0e6ed;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #3498db;
+}
+
+.skill-percent {
+    width: 40px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    text-align: right;
+}
+
+/* 项目预览模块 */
+.project-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-card {
+    border: 1px solid #f5f7fa;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.project-card h4 {
+    padding: 10px;
+    font-size: 0.95rem;
+    color: #2c3e50;
+}
+
+.link-btn {
+    display: inline-block;
+    margin: 0 10px 10px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    color: #3498db;
+    text-decoration: none;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.link-btn:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* 平板端适配（768px-1199px） */
+@media (max-width: 1199px) {
+    .home-grid {
+        grid-template-columns: 1fr 1fr; /* 双栏布局 */
+    }
+
+    .about-item {
+        grid-column: 1 / 2;
+    }
+
+    .skill-item {
+        grid-column: 1 / 2;
+    }
+
+    .project-item {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .project-preview {
+        gap: 20px;
+    }
+
+    .project-card img {
+        height: 150px;
+    }
+}
+
+/* 手机端适配（≤767px） */
+@media (max-width: 767px) {
+    .home-grid {
+        grid-template-columns: 1fr; /* 单列布局 */
+    }
+
+    .about-item, .skill-item, .project-item {
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+
+    .hero {
+        height: 80vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
